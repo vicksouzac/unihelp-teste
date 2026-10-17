@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="imagens/unihelplogo.png">
+  <title>UNIHELP - Meus Encontros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- BARRA DE NAVEGAÇÃO SUPERIOR -->
+   <link rel="stylesheet" href="imagens/unihelplogo.png">
+  <header class="navbar">
+    <div class="logo">
+      <span class="favicon.ico"></span> UNIHELP
+    </div>
+    <nav class="nav-links">
+      <a href="#">Início</a>
+      <a href="#">Explorar</a>
+      <a href="#" class="active">Meus encontros</a>
+      <a href="#">Banco de questões</a>
+      <a href="#">Alunos que podem ajudar</a>
+    </nav>
+    <div class="user-actions">
+      <span class="icon badge">🔔<span class="count">3</span></span>
+      <span class="icon">💬</span>
+      <div class="avatar-small"></div>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL (LAYOUT 2 COLUNAS) -->
+  <div class="main-container">
+
+    <!-- COLUNA DA ESQUERDA (LISTA DE ENCONTROS) -->
+    <main class="left-column">
+      <div class="page-header">
+        <h1>Meus encontros</h1>
+        <p>Gerencie e acompanhe todos os seus encontros de estudo.</p>
+      </div>
+
+      <!-- ABAS E FILTROS -->
+      <div class="tabs">
+        <button class="tab-btn">Criados por mim</button>
+        <button class="tab-btn active">Participando</button>
+        <button class="tab-btn">Anteriores</button>
+      </div>
+
+      <div class="filter-bar">
+        <input type="text" placeholder="🔍 Buscar encontros..." class="search-input">
+        <select class="select-input"><option>Status: Todos</option></select>
+        <select class="select-input"><option>Data: Próximos e atuais</option></select>
+        <button class="clear-btn">⚙️ Limpar filtros</button>
+      </div>
+
+      <!-- LISTA DE CARDS -->
+      <div class="card-list">
+
+        <!-- CARD 1 -->
+        <div class="card">
+          <div class="card-date">
+            <span class="day-label">HOJE</span>
+            <span class="day-number">14</span>
+            <span class="month">MAI</span>
+          </div>
+          <div class="card-content">
+            <div class="card-header-info">
+              <span class="tag tag-red">Cálculo II</span>
+              <span class="status status-green">● Em andamento</span>
+            </div>
+            <h2>Derivadas e Aplicações</h2>
+            <p class="details">🕒 Hoje, 14/05 | 14:00 - 15:30 | 📍 Sala 301 - Bloco A | 👥 6 / 8 vagas</p>
+            <p class="description">Revisão de derivadas básicas, regra da cadeia e aplicações em problemas práticos.</p>
+            <div class="organizer">
+              <div class="avatar"></div>
+              <span>Organizado por <strong>João Silva</strong> ★ 4,8</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <button class="btn-primary">▶ Entrar no encontro</button>
+            <button class="btn-secondary">Ver detalhes</button>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+          <div class="card-date">
+            <span class="day-label">QUI</span>
+            <span class="day-number">15</span>
+            <span class="month">MAI</span>
+          </div>
+          <div class="card-content">
+            <div class="card-header-info">
+              <span class="tag tag-orange">Programação</span>
+              <span class="status status-green">● Confirmado</span>
+            </div>
+            <h2>Funções e Recursão em Python</h2>
+            <p class="details">🕒 Quinta, 15/05 | 19:00 - 20:30 | 📍 Online - Google Meet | 👥 5 / 10 vagas</p>
+            <p class="description">Exercícios práticos sobre funções, parâmetros e recursão usando Python.</p>
+            <div class="organizer">
+              <div class="avatar"></div>
+              <span>Organizado por <strong>Maria Fernanda</strong> ★ 4,6</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <button class="btn-secondary">Ver detalhes</button>
+            <button class="btn-outline">📅 Reagendar</button>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="load-more">▼ Carregar mais encontros</button>
+    </main>
+
+    <!-- COLUNA DA DIREITA (PAINEL / DASHBOARD) -->
+    <aside class="right-column">
+
+      <!-- RESUMO DA SEMANA -->
+      <div class="side-box">
+        <h3>Resumo dos meus encontros</h3>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-icon red">📅</span>
+            <div>
+              <strong>1</strong>
+              <p>Próximo encontro<br><small>Hoje, 14:00</small></p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon blue">👥</span>
+            <div>
+              <strong>4</strong>
+              <p>Total participando<br><small>Próximos e atuais</small></p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon green">📝</span>
+            <div>
+              <strong>3</strong>
+              <p>Criados por mim<br><small>Próximos e atuais</small></p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon purple">✔</span>
+            <div>
+              <strong>12</strong>
+              <p>Finalizados<br><small>Este semestre</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AGENDA DA SEMANA -->
+      <div class="side-box">
+        <div class="box-header">
+          <h3>Agenda da semana</h3>
+          <a href="#" class="link-red">Ver agenda</a>
+        </div>
+        <ul class="agenda-list">
+          <li>
+            <span class="agenda-date">Hoje<br><strong>14/05</strong></span>
+            <div>
+              <strong>Derivadas e Aplicações</strong>
+              <p>14:00 - 15:30 • Sala 301 - Bloco A</p>
+            </div>
+            <span class="status-pill status-green">Em andamento</span>
+          </li>
+          <li>
+            <span class="agenda-date">Qui<br><strong>15/05</strong></span>
+            <div>
+              <strong>Funções e Recursão em Python</strong>
+              <p>19:00 - 20:30 • Online - Google Meet</p>
+            </div>
+            <span class="status-pill status-green">Confirmado</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- DICAS -->
+      <div class="side-box tips-box">
+        <h3>💡 Dicas para bons encontros</h3>
+        <ul>
+          <li>✔ Chegue alguns minutos antes para testar sua conexão.</li>
+          <li>✔ Participe ativamente e compartilhe suas dúvidas.</li>
+          <li>✔ Mantenha o foco e evite distrações durante o encontro.</li>
+          <li>✔ Ao final, revise o conteúdo e anote os principais pontos.</li>
+        </ul>
+      </div>
+
+    </aside>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
